@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+args = ARGV.dup
+snark_for_options = {
+  '-l' => "You can't do anything, you can't even spell sudo",
+  '-s' => "Don't even think of running as the uper suser.",
+  '-b' => "Run it in the background? Hah, fat chance.",
+  '-e' => "Edit which file? Oh wait, you can't"
+}
+indent = " "*4
+additional_snark = args.map{|arg| indent + snark_for_options[arg].to_s if snark_for_options[arg]}.join "\n"
+puts "----USDO----"
+puts indent + "You mispelled sudo"
+puts additional_snark unless additional_snark.empty?
+puts indent + "are you really sure you want to try running",indent+"'sudo #{args.join(' ')}'????"
+ 
