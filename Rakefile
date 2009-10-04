@@ -5,12 +5,12 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "usdo"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{adds usdo command to ridicule mispellings of sudo}
+    gem.description = %Q{...}
     gem.email = "ndh@baroquebobcat.com"
     gem.homepage = "http://github.com/baroquebobcat/usdo"
     gem.authors = ["Nick Howard"]
-    gem.add_development_dependency "thoughtbot-shoulda"
+#    gem.add_development_dependency "thoughtbot-shoulda"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 rescue LoadError
